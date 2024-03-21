@@ -1,0 +1,172 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+nav {
+    /* Styles for navigation bar */
+}
+
+header {
+    background-color: #0f2182;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.nutritionists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.nutritionist {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.nutritionist img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto 20px; /* Center the image horizontally and add margin at the bottom */
+    display: block; /* Ensure the image is a block element */
+    object-fit: cover; /* Preserve aspect ratio while covering the area */
+    object-position: center; /* Center the image within its container */
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+}
+
+.nutritionist img:hover {
+    transform: scale(1.1); /* Increase the size of the image on hover */
+}
+
+
+.nutritionist h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.nutritionist p {
+    color: #777;
+}
+.meal-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center the meal plans horizontally */
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.meal-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Set the width of each meal plan */
+}
+
+.meal-plan img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Preserve the aspect ratio */
+    border-radius: 10px; /* Apply border radius to the image */
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.meal-plan h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.meal-plan p {
+    color: #777;
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 48px;
+}
+
+footer .right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links {
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a {
+    color: #989898;
+    transition: color 0.3s ease;
+}
+
+footer .right .links a:hover {
+    color: #fff;
+}
+
+footer .right .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .right .social i:hover {
+    color: #304ffe;
+}
+
+footer .right p {
+    font-size: 13px;
+    color: #777;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    nav,
+    header,
+    h2.separator,
+    .connect-nutritionist,
+    .meal-plans,
+    .view-more,
+    .nutritionists,
+    footer{
+        padding: 0 40px;
+    }

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        nav h1 {
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin-right: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            min-width: 10rem;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 1rem;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f2f2f2;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        main h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        main p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        main ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        main li {
+            margin-bottom: 0.5rem;
+        }
+
+        main a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        main a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-social-media {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-social-media li {
+            margin-right: 1rem;
+        }
+
+        .nav-social-media a {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        .nav-social-media a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <h1>Logo</h1>
+        <ul class="nav-main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li class="dropdown"><a href="#" class="nav-link"><span>Blog</span> <i class="fa fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="blog.html">All Posts</a>
+                    <a href="recipes.html">Recipes</a>
+                    <a href="tips-and-suggestions.html">Tips and Suggestions</a>
+                    <a href="videos.html">Videos</a>
+                </div>
+           </li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><span>Services</span> <i class="fa fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#personalized-nutrition-consultation">Personalized Nutrition Consultation</a>
+                    <a href="#diet-and-meal-planning">Diet and Meal Planning</a>
+                    <a href="#nutrition-workshops-and-seminars">Nutrition Workshops and Seminars</a>
+                </div>
+            </li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <ul class="nav-social-media">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Services</h1>
+        <p>Welcome to our Services page! Here, you'll find a variety of services to help you meet your nutrition goals. From personalized nutrition consultations to group workshops, we've got you covered.</p>
+        <h2 id="personalized-nutrition-consultation">Personalized Nutrition Consultation</h2>
+        <p>Our personalized nutrition consultations are designed to help you meet your unique nutrition goals. During your consultation, you'll work with one of our registered dietitians to:</p>
+        <ul>
+            <li>Identify your nutritional needs and goals</li>
+            <li>Develop a customized nutrition plan that fits your lifestyle and preferences</li>
+            <li>Learn strategies to overcome any barriers to healthy eating</li>
+            <li>Monitor your progress and make adjustments as needed</li>
+        </ul>
+        <h2 id="diet-and-meal-planning">Diet and Meal Planning</h2>
+        <p>Our diet and meal planning services are designed to help you make healthy food choices, no matter how busy your schedule is. We'll work with you to:</p>
+        <ul>
+            <li>Create a customized meal plan that fits your dietary needs and preferences</li>
+            <li>Provide you with recipes and meal ideas that are easy to prepare and delicious</li>
+            <li>Teach you how to read food labels and make informed choices when shopping</li>
+            <li>Help you plan for special occasions and events, such as holidays and parties</li></ul>
+        <h2 id="nutrition-workshops-and-seminars">Nutrition Workshops and Seminars</h2>
+        <p>Our nutrition workshops and seminars are designed to help you learn more about nutrition and healthy eating. We offer a variety of topics, including:</p>
+        <ul>
+            <li>Healthy cooking techniques</li>
+            <li>Meal planning and preparation</li>
+            <li>Label reading and food labeling</li>
+            <li>Dietary supplements and their role in nutrition</li>
+            <li>Nutrition for special populations, such as athletes, pregnant women, and older adults</li>
+        </ul>
+        <p>Our workshops and seminars are led by registered dietitians and are open to individuals and groups. Contact us to learn more about our upcoming events and to register.</p>
+   </main>
+</body>
+</html>

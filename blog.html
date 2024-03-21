@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- FONTAWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        p {
+            margin-top: 0;
+            line-height: 1.5;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #666;
+        }
+
+        /* Navigation Styles */
+        .nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-main-menu, .nav-social-media {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-main-menu li, .nav-social-media li {
+            margin-left: 20px;
+        }
+        .nav-main-menu li:last-child, .nav-social-media li:last-child {
+            margin-right: 0;
+        }
+        .nav-main-menu a, .nav-social-media a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .nav-main-menu a:hover, .nav-social-media a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Blog Styles */
+        .blog-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        /* Recipes Styles */
+        .recipes-section {
+            background-color: #e9f7f2;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        /* Tips and Suggestions Styles */
+        .tips-section {
+            background-color: #f7e9e9;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        /* Videos Styles */
+        .videos-section {
+            background-color: #ede9f7;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <h1>Logo</h1>
+        <ul class="nav-main-menu">
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link"><span>About Us</span><i class="fa fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="about-us.html">Our Team</a>
+                    <a href="history.html">History</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="blog.html" class="nav-link"><span>Blog</span> <i class="fa fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="blog.html">All Posts</a>
+                    <a href="recipes.html">Recipes</a>
+                    <a href="tips-and-suggestions.html">Tips and Suggestions</a>
+                    <a href="videos.html">Videos</a>
+                </div>
+            </li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <ul class="nav-social-media">
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="blog-section">
+            <h1>Blog</h1>
+            <p>Welcome to our blog! Here, you'll find a variety of posts on topics related to our business. From recipes to tips and suggestions, we've got you covered.</p>
+            <h2>Recent Posts</h2>
+            <ul>
+                <li><a href="post.html">How to Make the Perfect Cup of Coffee</a></li>
+                <li><a href="post.html">5 Tips for Brewing Better Coffee at Home</a></li>
+                <li><a href="post.html">The History of Coffee: From Ethiopia to Your Cup</a></li>
+            </ul>
+        </div>
+        <div class="recipes-section">
+            <h1>Recipes</h1>
+            <p>Welcome to our Recipes page! Here, you'll find a variety of recipes that use our products. From breakfast to dinner, we've got you covered.</p>
+            <h2>Recent Recipes</h2>
+            <ul>
+                <li><a href="recipe.html">Perfectly Poached Eggs</a></li>
+                <li><a href="recipe.html">Creamy Tomato Soup</a></li>
+                <li><a href="recipe.html">Grilled Chicken with Lemon-Herb Marinade</a></li>
+            </ul>
+        </div>
+        <div class="tips-section">
+            <h1>Tips and Suggestions</h1>
+            <p>Welcome to our Tips and Suggestions page! Here, you'll find a variety of tips and suggestions to help you make the most of our products. From cooking techniques to ingredient substitutions, we've got you covered.</p>
+            <h2>Recent Tips and Suggestions</h2>
+            <ul>
+                <li><a href="tips-and-suggestions.html">5 Tips for Making Perfect Pasta</a></li>
+                <li><a href="tips-and-suggestions.html">How to Substitute Ingredients in Recipes</a></li>
+                <li><a href="tips-and-suggestions.html">The Best Way to Store Fresh Herbs</a></li>
+            </ul>
+        </div>
+        <div class="videos-section">
+            <h1>Videos</h1>
+            <p>Welcome to our Videos page! Here, you'll find a variety of videos to help you make the most of our products. From cooking demonstrations to product overviews, we've got you covered.</p>
+            <h2>Recent Videos</h2>
+            <ul>
+                <li><a href="videos.html">How to Make Perfect Pasta</a></li>
+                <li><a href="videos.html">Product Overview: Our Premium Olive Oil</a></li>
+                <li><a href="videos.html">Cooking Demonstration: Grilled Chicken with Lemon-Herb Marinade</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    object-fit: cover;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('backgroung.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav a.logo{
+    font-size: 33px;
+    color: #0f2182;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child){
+    margin-right: 20px;
+}
+
+nav .login button{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login button.signup{
+    background-color: #000;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+header {
+    position: relative;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    color: #fff; /* Change color as needed */
+}
+
+.header-image {
+    display: block;
+    width: 100%;
+    max-width: 700px; /* Adjust the max-width as needed */
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+    filter: brightness(0.7); /* Adjust brightness for better appearance */
+}
+
+
+
+h2.separator{
+    padding: 0 80px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.connect-nutritionist {
+    padding: 0 80px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connect-nutritionist .item {
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 23%;
+}
+
+.connect-nutritionist .item:hover {
+    box-shadow: none;
+}
+
+.connect-nutritionist .item .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.connect-nutritionist .item .header i {
+    font-size: 40px;
+}
+
+.connect-nutritionist .item .header h5 {
+    font-size: 17px;
+}
+
+.connect-nutritionist .item p {
+    margin-top: 10px;
+    padding: 0 4px;
+}
+
+/* CSS styles for meal plans */
+.meal-plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.meal-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.meal-plan img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.meal-plan h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.meal-plan p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Hide additional meal plans by default */
+.meal-plan.hidden {
+    display: none;
+}
+
+.view-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-more button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0f2182;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-more button:hover {
+    background-color: #304ffe;
+}
+
+.nutritionists {
+    padding: 0 80px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nutritionists .item {
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 23%;
+}
+
+.nutritionists .item:hover {
+    box-shadow: none;
+}
+
+.nutritionists .item img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.nutritionists .item .info h4 {
+    font-size: 18px;
+}
+
+.nutritionists .item .info p {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3 {
+    font-size: 48px;
+}
+
+footer .right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links {
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a {
+    color: #989898;
+    transition: color 0.3s ease;
+}
+
+footer .right .links a:hover {
+    color: #fff;
+}
+
+footer .right .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social i {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .right .social i:hover {
+    color: #304ffe;
+}
+
+footer .right p {
+    font-size: 13px;
+    color: #777;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    nav,
+    header,
+    h2.separator,
+    .connect-nutritionist,
+    .meal-plans,
+    .view-more,
+    .nutritionists,
+    footer{
+        padding: 0 40px;
+    }
+}
