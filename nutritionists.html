@@ -8,13 +8,22 @@
     <title>Our Nutritionists - NutriVibe</title>
 </head>
 <body>
-    <nav>
-      
-    </nav>
-
     <header>
-        <h1>Meet Our Nutritionists</h1>
+        <nav>
+            <a class="logo">NutriVibe</a>
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="blog.html">Blog</a>
+                <a href="#">About Us</a>
+            </div>
+                <div class="login">
+                    <a href="index.html"><button class="signup">Sign Up</button></a>
+                    <a href="index.html"><button>Log In</button></a>
+                </div>
+        </nav>
     </header>
+    <h1>Meet Our Nutritionists</h1>
 
     <div class="nutritionists">
         <div class="nutritionist">
@@ -48,8 +57,38 @@
             <p>Specializes in nutritional therapy for mental health. She combines nutrition and lifestyle changes to support individuals with anxiety, depression, and other mental health conditions.</p>
         </div>
     </div>
-
-    <footer>
+        <section class="booking">
+            <h2>Book a Nutritionist</h2>
+            <form action="submit_booking.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="nutritionist">Nutritionist:</label>
+                <select id="nutritionist" name="nutritionist" required>
+                    <option value="">Select a Nutritionist</option>
+                    <option value="lavender-avenson">Lavender Avenson</option>
+                    <option value="jane-doe">Jane Doe</option>
+                    <option value="david-wilson">David Wilson</option>
+                    <option value="michael-johnson">Michael Johnson</option>
+                    <option value="emily-brown">Emily Brown</option>
+                    <option value="alice-smith">Alice Smith</option>
+                </select>
+    
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
         <footer>
             <h3>Connect with NutriVibe</h3>
             <div class="right">
